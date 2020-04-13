@@ -11,23 +11,14 @@
 <div></div>
 <body>
 
-
     <div class="burger-menu" id="js-burger-menu">
         <div class="burger-menu__line"></div>
         <div class="burger-menu__line"></div>
         <div class="burger-menu__line"></div>
     </div>
 
-    <div class="hidden" id="js-left-menu">
-        <a class="left-menu__item" href="#">Home</a>
-        <a class="left-menu__item" href="#about">About Us</a>  
-        <a class="left-menu__item" href="#approch">Our Approch</a>
-        <a class="left-menu__item" href="#work">Our Work</a>                                             
-    </div>
-
-
     <div class="wrapper">
-        <header>
+        <header id="home">
             <div class="header-top">
                 <div class="conteiner">
                     <div class="contacts">
@@ -52,14 +43,14 @@
                     <div class="logo">
                         <img src="img/logo.png" alt="logo">
                     </div>
-                    <div class="menu">
-                        <a class="menu__item" href="#">Home</a><div class="menu__delimiter"></div>
-                        <a class="menu__item" href="#about">About Us</a><div class="menu__delimiter"></div>   
-                        <a class="menu__item" href="#approch">Our Approch</a><div class="menu__delimiter"></div>
-                        <a class="menu__item" href="#work">Our Work</a>                                             
-                    </div>
-                    
-                        <button class="btn header-button red-button">Free Consultation</button>                    
+                    <div class="menu" id="js-header-menu">
+                        <a class="menu__item anchor" href="#home">Home</a><div class="menu__delimiter"></div>
+                        <a class="menu__item anchor" href="#about">About Us</a><div class="menu__delimiter"></div>   
+                        <a class="menu__item anchor" href="#approch">Our Approch</a><div class="menu__delimiter"></div>
+                        <a class="menu__item anchor" href="#work">Our Work</a>
+                        <a class="hidden anchor" href="#contacts" id="js-menu-contacts">Contacts</a>                                                
+                    </div>     
+                    <button class="btn header-button red-button">Free Consultation</button> 
                 </div>  
             </div>
         </header>    
@@ -69,7 +60,9 @@
                 <div class="banner__title">We Providing</div>
                 <div class="banner__subtitle">Social Media marketing for businesses</div>
                 <div class="banner__button">
-                    <button class="banner__btn btn">FREE CONSULTATION</button>
+                    <form action="#fb-analysis">
+                        <button type="submit" class="banner__btn btn">FREE CONSULTATION</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -307,27 +300,32 @@
                     <img src="./img/arrow.png" alt="">
                 </div>
 
-                <div class="fb-analysis__triangle"></div>
+                
 
-                <div class="form-conteiner">  
-                    <form class="form" action="">
-                        <div class="form__close-button">
-                            <span>X</span>
-                        </div>
-                        <div class="form__text">
-                            Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
-                        </div>   
-                        <div class="form__inputs">
-                            <input type="text" placeholder="Your Name">
-                            <input type="text" placeholder="Contact Number">
-                            <input type="text" placeholder="Company Name">
-                        </div>
-                        <div class="form__button">
-                            <button class="red-button btn">SUBMIT NOW</button>
-                        </div>
-                    </form>
+                <div class="form-section" id="fb-analysis">
+
+                    <div class="fb-analysis__triangle"></div>
+
+                    <div class="form-conteiner">  
+                        <form class="form" action="">
+                            <div class="form__close-button">
+                                <span>X</span>
+                            </div>
+                            <div class="form__text">
+                                Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
+                            </div>   
+                            <div class="form__inputs">
+                                <input type="text" placeholder="Your Name">
+                                <input type="text" placeholder="Contact Number">
+                                <input type="text" placeholder="Company Name">
+                            </div>
+                            <div class="form__button">
+                                <button class="red-button btn">SUBMIT NOW</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-
             </div>
         </div>
 
@@ -343,7 +341,7 @@
                         </div>
                     </div>
                     
-                    <div class="links-group">
+                    <div class="links-group"  id="contacts">
                         <a href="#" class="links-group__item">
                             <i class="fab fa-facebook-f fa-links-group"></i>
                         </a>
@@ -376,7 +374,7 @@
         </div>
     </div>
 
-
+    <div id="js-background-wrap"></div>
 
     <script src="js/index.js"></script>
 
