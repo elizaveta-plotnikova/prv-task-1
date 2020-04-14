@@ -802,7 +802,7 @@ a {
 /* Media */ 
 
 
-@media screen and (max-width: 850px) {
+@media screen and (min-width : 320px) and (max-width : 1024px) {
 
     .logo, .menu__delimiter, .header-button {
         display: none;
@@ -980,10 +980,6 @@ a {
         width: 300px;
     }
 
-}
-
-@media screen and (max-width: 900px) {
-
     .step-icon--left {
         margin: 0;
         left: 0;
@@ -1052,8 +1048,7 @@ a {
 
 }
 
-
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
 
     .approch__img img {
         width: 100%;
@@ -1075,4 +1070,4 @@ a {
         padding: 20px 20px;
     }
 
-}
+} */
